@@ -1,10 +1,10 @@
 from pygame.locals import *
-import settings as s
-from Player import Player
-from Meteor import Meteor
+import configuration.settings as s
+from actors.Player import Player
+from actors.Meteor import Meteor
 import pygame
 import sys
-from settings import ran
+from configuration.settings import ran
 
 s.Update()
 pygame.font.init() 
@@ -38,7 +38,7 @@ def main():
     P1.GetTriangle(s.WIDTH/2,s.HEIGHT/2,25)
     Time = 0
     Last = 0
-    NextM = 5000
+    NextM = 2000
     Score = 0
     GameOver = False
     while True:
